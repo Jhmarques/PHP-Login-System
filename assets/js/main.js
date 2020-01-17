@@ -29,16 +29,15 @@ $(document).on("submit", "form.js-register", function (event) {
     })
         .done(function ajaxDone(data) {
             // Whatever data is
-            console.log(data);
             if(data.redirect !== undefined) {
                 window.location = data.redirect;
             }
-
-            alert(data.name);
+            else if(data.error !== undefined) {
+                _error.text(data.error).show();
+            }
         })
         .fail(function ajaxFailed(e) {
             // This failed
-            console.log(e);
         })
         .always(function ajaxAlwaysDoThis(data) {
             // Always do
