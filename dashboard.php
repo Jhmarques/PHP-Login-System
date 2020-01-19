@@ -1,6 +1,9 @@
 <?php
-define('__CONFIG__', true);
-require_once "inc/config.php"; ?>
+    define('__CONFIG__', true);
+    require_once "inc/config.php";
+
+    ForceLogin();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +22,7 @@ require_once "inc/config.php"; ?>
 <body>
 
 <div class="uk-section uk-container">
-
+    Dashboard here
 </div>
 
 <?php require_once "inc/footer.php"; ?>

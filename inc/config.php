@@ -12,9 +12,10 @@
     error_reporting(-1);
     ini_set("display_errors", "On");
 
-    // Include DB.php file
+    // Include files
     include_once "classes/DB.php";
     include_once "classes/Filter.php";
+    include_once "functions.php";
 
     $con = DB::getConnection();
     ?>

@@ -1,6 +1,9 @@
 <?php
-define('__CONFIG__', true);
-require_once "inc/config.php"; ?>
+    define('__CONFIG__', true);
+    require_once "inc/config.php";
+
+    ForceDashboard();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
