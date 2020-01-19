@@ -4,7 +4,7 @@
     define('__CONFIG__', true);
     require_once "../inc/config.php";
 
-    if($_SERVER["REQUEST_METHOD"] == "POST" or 1==1) {
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
         // Return json format
         //header("Content-Type: application/json");
 
